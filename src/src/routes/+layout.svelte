@@ -9,6 +9,7 @@
 <nav>
     <a href=".">HOME</a>
     <a href="/about">ABOUT</a>
+    <a href="/test">TEST</a>
 </nav>
 
 <slot />

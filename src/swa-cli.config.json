@@ -3,7 +3,7 @@
   "configurations": {
     "src": {
       "appLocation": ".",
-      "apiLocation": "build/server",
+      "apiLocation": "custom/api",
       "outputLocation": "build/static",
       "appBuildCommand": "npm run build",
       "apiBuildCommand": "npm run build --if-present",
