@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route": "members/{id}"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "member",
+      "direction": "in",
+      "connectionStringSetting": "AzureCosmosDb",
+      "databaseName": "cosmos-socialclub",
+      "collectionName": "members",
+      "sqlQuery": "SELECT * FROM c WHERE c.id = {id}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
